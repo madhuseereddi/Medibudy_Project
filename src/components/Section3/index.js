@@ -66,7 +66,7 @@ const HealthCheckupPackages = () => {
   };
 
   if (loading) {
-    return <p>Loading packages...</p>;
+    return <p></p>;
   }
 
   if (error) {

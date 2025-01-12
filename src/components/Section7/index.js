@@ -20,7 +20,7 @@ const LabFeatures = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading lab features...</p>;
+    return <p></p>;
   }
 
   return (

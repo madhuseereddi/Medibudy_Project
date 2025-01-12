@@ -33,7 +33,7 @@ const BannerGallery = () => {
   };
 
   if (loading) {
-    return <p>Loading banners...</p>;
+    return <p></p>;
   }
 
   if (error) {
@@ -53,7 +53,7 @@ const BannerGallery = () => {
           </div>
         ))
       ) : (
-        <p>No banners available.</p>
+        <p></p>
       )}
     </div>
   );

@@ -18,7 +18,7 @@ const WhatUsersSay = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading reviews...</p>;
+    return <p></p>;
   }
 
   return (

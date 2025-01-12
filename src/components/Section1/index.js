@@ -3,6 +3,7 @@ import "./index.css";
 
 const ResponsiveImageGallery = () => {
   const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('https://677f757b0476123f76a68a42.mockapi.io/api/labs/v1/page_config')
@@ -20,6 +21,9 @@ const ResponsiveImageGallery = () => {
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
+      })
+      .finally(() => {
+        setLoading(false); 
       });
   }, []);
 
@@ -29,7 +33,9 @@ const ResponsiveImageGallery = () => {
 
   return (
     <div className="image-gallery">
-      {images.length > 0 ? (
+      {loading ? (
+        <div className="spinner"></div>
+      ) : images.length > 0 ? (
         images.map((image, index) => (
           <div key={index} className="image-item" onClick={() => handleClick(image.deeplink)}>
             <img
@@ -41,7 +47,7 @@ const ResponsiveImageGallery = () => {
           </div>
         ))
       ) : (
-        <p>Loading images...</p>
+        <p className="empty-message">No images available.</p>
       )}
     </div>
   );

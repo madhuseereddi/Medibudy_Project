@@ -27,7 +27,7 @@ const FAQSection = () => {
   };
 
   if (loading) {
-    return <p>Loading FAQs...</p>;
+    return <p></p>;
   }
 
   return (
