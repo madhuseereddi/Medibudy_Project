@@ -1,0 +1,243 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.category {
+  flex: 0 1 auto; 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.pp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.category h4 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.package-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.package-items li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.package-items li:hover {
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.single-package {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-package:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.health-checkup-packages {
+  background-color: #007bff24;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.main-head {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  text-align: left;
+}
+
+.viewall {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.package-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  text-align: left;
+}
+
+.reports-text {
+  color: #007bff;
+  margin: 5px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.clocks {
+  height: 12px;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tests {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ul1 {
+  font-size: 10px;
+  gap: 10px;
+  color: gray;
+}
+
+.all-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.r1 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.radiology-container {
+  margin-left: 30px;
+}
+
+.full-d {
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(165, 42, 42, 0.084);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.fasting-container {
+  margin-left: 20px;
+}
+
+.home-container {
+  margin-right: 30px;
+}
+
+.price {
+  margin-left: 30px;
+}
+
+.items {
+  display: flex; 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: auto;
+  margin-left: 25px;
+  gap: 20px; 
+}
+
+.package-card {
+  flex: 1 1 200px;
+  min-width: 300px; 
+  height: 400px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+
+
+.price {
+  margin-top: 10px;
+}
+
+.reports-text {
+  display: flex;
+  align-items: center;
+}
+
+.clocks {
+  margin-right: 5px;
+}
+
+.kk1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+.price-adjustment
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+
+}
+
+.pps{
+  background-color: #007bff;
+  border: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.ssp{
+  font-weight: bold;
+}

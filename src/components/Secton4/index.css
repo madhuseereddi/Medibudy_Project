@@ -1,0 +1,12 @@
+.image1{
+    height: 130px;
+}
+.image-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+}

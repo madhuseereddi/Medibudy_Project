@@ -1,0 +1,171 @@
+.final-container {
+    width: 90%;
+    height: 146.34px;
+    margin: auto;
+    position: relative; 
+    border-radius: 20px;
+    background: var(--Colors-Pink-50, #FDE9F7);
+    box-shadow: 0px 3.9px 9.76px 0px #0000000D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 10px; 
+    margin-top: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+.bg-img {
+    width: 162.44px;
+    height: 136.59px;
+    background: var(--Colors-Pink-700, #922B73);
+
+    position: absolute;
+    top: 53.41px;
+    right: -40px;
+    margin-left: 100px;
+    opacity: 0.2;
+    transform: rotate(50deg);
+    border-radius: 30px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: 10px;;
+  }
+  
+  .main-text {
+
+    height: 36px;
+    font-family: var(--global-typographytype-facefont-family-body);
+    font-size: 14.66px;
+    font-weight: 600;
+    line-height: 17.56px;
+    text-align: left;
+    text-decoration: none;
+    color: #2E3742;
+    opacity: 1;
+
+  }
+  
+  .sub-text {
+
+    height: 16px;
+    font-family: var(--global-typographytype-facefont-family-body);
+    font-size: 12.76px;
+    font-weight: 400;
+    line-height: 15.61px;
+    color: #2E3742;
+    text-align: left;
+
+    opacity: 1;
+
+  }
+  
+  /* Book Now section */
+  .book-now {
+    
+    height: 14px;
+    font-family: var(--global-typographytype-facefont-family-body);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #922B73;
+    text-align: left;
+
+
+    box-shadow: 0px 0.49px 1.95px 0px #0000000A;
+    cursor: pointer;
+  }
+
+/* Pregnant image styling with mirror effect */
+.pregnant-img {
+    width: 97.2px;
+    
+    position: absolute;
+    top:10px;
+    bottom: 0; /* Positioned at the end (bottom) of the final container */
+    right: 10px; /* Adjust to center as needed */
+    transform: scaleX(-1); /* Horizontal mirror flip */
+    opacity: 1;
+    transition: transform 0.3s ease; /* Added transition for smooth effect */
+}
+.gallery-banner{
+    height: 120px;
+    width: 350px;
+    margin-right: 40px;;
+}
+.banner-gallery{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;;
+    margin-top: 60px;;
+    margin-left: 80px;;
+}
+/* Adjustments for better responsiveness */
+@media (max-width: 768px) {
+    /* Final container styling for smaller screens */
+    .final-container {
+        width: 84%;
+    }
+    .main-text {
+        width: 211.71px;
+        height: 36px;
+        font-family: var(--global-typographytype-facefont-family-body);
+        font-size: 13.66px;
+        font-weight: 600;
+        line-height: 17.56px;
+        text-align: left;
+        text-decoration: none;
+        color: #2E3742;
+        opacity: 1;
+    
+      }
+      .banner-gallery{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 30px;;
+        margin-top: 60px;;
+        margin-left: 30px;;
+    }
+      .gallery-banner{
+        height: 120px;
+        width: 350px;
+        margin-right: 30px;;
+    }
+      
+      .sub-text {
+        width: 227.32px;
+        height: 16px;
+        font-family: var(--global-typographytype-facefont-family-body);
+        font-size: 9.76px;
+        font-weight: 400;
+        line-height: 15.61px;
+        color: #2E3742;
+        text-align: left;
+    
+        opacity: 1;
+    
+      }
+}
+

@@ -1,0 +1,46 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 15px;;
+    justify-content: center;
+  }
+  
+  .image-item {
+    text-align: center;
+    cursor: pointer;
+    width: 180px;
+
+  }
+  
+  .gallery-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .icon-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery{
+        gap: 10px;
+        margin-top: 0;
+    }
+    .image-item{
+        width: 120px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+align-items: center;    }
+    .icon-text{
+        font-size: 11px;
+        width: 50px;;
+    }
+  }
+  
